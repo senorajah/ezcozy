@@ -1,1 +1,1 @@
-# ezcozy
+# website for ezcozy
