@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <script>
+        function userValidate(){
+            let x = document.forms["LoginForm"]["username"].value;
+            if(x != "rajah"){
+                alert("wrong username")
+                return false;
+            } else if(x ==""){
+                    alert("username cannot be blank");
+                    return false;
+                }
+                return true;
+        }
+        function passValidate(){
+            let y = document.forms["LoginForm"]["password"].value;
+            let symbols = /[`~!@#$%^&*()_+\-=\[\]{}|\\;:'",<.>\/?]/;
+            if(y != "rajah"){
+                alert("wrong password")
+            }else if(y==""){
+                alert("password cannot be blank");
+                return false;
+            }else if (symbols.test(y)){
+                alert("special character are not allowed")
+                return false;
+            }
+            return true;     
+        }
+        function validated(){
+            if(passValidate() && userValidate()){
+                window.location.href = "C:/Users/rajah/Downloads/schoolFiles/ezcozy/ezcozyPage/landingPage/landing.html"
+            }
+        }
+    </script>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="C:\Users\rajah\Downloads\schoolFiles\ezcozy\src\output.css">
+</head>
+<body>
+
+    <div class="container">
+       
+            <h1 class="bg-red-800 text-3xl font-bold underline ">Welcome to ezcozy!</h1>
+            <form id="LoginForm" onsubmit="return false">
+
+                <div class="username">
+                    <label for="username">username</label>
+                    <input type="text" name="username" id="username" >
+                </div>
+
+            
+                <div class="password">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <button type="button" onclick="validated()">Login</button>
+            </form>
+        
+            
+       
+    </div>
+</body>
+</html>
