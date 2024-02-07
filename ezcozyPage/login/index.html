@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    
     <script>
         function userValidate(){
             let x = document.forms["LoginForm"]["username"].value;
@@ -42,31 +41,32 @@
     <link rel="stylesheet" href="C:\Users\rajah\Downloads\schoolFiles\ezcozy\src\output.css">
 </head>
 <body>
-    <div class="flex h-screen bg-gradient-to-r  from-navyblue via-blue-300 to-burntOrange">
-        <div class="w-1/2 h-96 mt-20 ml-7 p-6 shadow-xl rounded-md bg-white bg-opacity-50">
+    <div class="flex h-screen bg-gradient-to-r  from-violet-900 via-slate-600 to-slate-400">
+        <div class="w-1/2 h-96 mt-20 ml-7 p-6 shadow-xl rounded-md bg-bg1 bg-cover bg-opacity-100 ">
             <form id="LoginForm" onsubmit="return false">
-                    <h1 class="text-burntOrange font-dancing text-7xl font-bold p-5 flex justify-center">Welcome</h1>
+                    <h1 class="text-white font-dancing text-7xl font-bold p-5 flex justify-center">Welcome back</h1>
                         <div class="mb-3"> 
-                            <label for="username" class="font-bold text-burntOrange block 
+                            <label for="username" class="font-dancing font-bold text-white block 
                                         text-xl mb-2">username</label>
                             <input type="text" name="username" id="username" class="w-full h-8 rounded-md focus:outline-burntOrange" >
                         </div>
                         <div class="mb-3">
-                            <label for="password" class=" font-bold block text-xl text-burntOrange mb-2">password</label>
+                            <label for="password" class=" font-dancing font-bold block text-xl text-white mb-2">password</label>
                             <input type="password" name="password" id="password" class="w-full  h-8 rounded-md focus:outline-burntOrange">
                         </div>
                         <div class="flex justify-center">
-                            <button class="bg-burntOrange w-full p-2 rounded-md text-lg text-white text-bold font-protest" type="button" onclick="validated()">Login</button>
+                            <button class="bg-opacity-20 shadow-lg hover:bg-burntOrange duration-300 w-52 p-2 rounded-md text-lg
+                                     text-white text-bold font-dancing" type="button" onclick="validated()">Login</button>
                         </div>
             </form>            
         </div>
-        <div class="w-1/2 h-48 pl-5 pt-20" >
+        <div class="w-1/2 h-48 pl-5 pt-8" >
             <div class=" flex justify-center">
                 <div class="text-5xl">
-                    <h1 class="text-white"> what is <span class="font-bold font-protest text-5xl text-navyblue ">ezcozy</span>?</h1>
+                    <h1 class="text-white font-dancing"> what is <span class="font-bold font-protest text-5xl text-violet-950 ">ezcozy</span>?</h1>
                 </div>   
              </div>     
-            <div class="p-3 text-left text-white">
+            <div class="p-3 w-11/12  text-left text-white bg-gradient-to-b from-slate-900 via-slate-500 to-slate-400 bg-opacity-100 rounded-md  ">
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non enim metus. Nam sit amet elementum ante,
             nec viverra est. Aenean nec augue tristique, vestibulum justo eget, luctus urna. In risus augue, vestibulum 
