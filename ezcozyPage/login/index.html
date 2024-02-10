@@ -37,50 +37,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Murthehelp</title>
     <link rel="stylesheet" href="C:\Users\rajah\Downloads\schoolFiles\ezcozy\src\output.css">
+
 </head>
 <body>
-    <div class="flex h-screen bg-gradient-to-r  from-violet-900 via-slate-600 to-slate-400">
-        <div class="w-1/2 h-96 mt-20 ml-7 p-6 shadow-xl rounded-md bg-bg1 bg-cover bg-opacity-100 ">
+    <div class="flex justify-center h-screen bg-gradient-to-r  from-violet-900 via-slate-500 to-coral">
+        <div class="w-1/2 h-96 mt-20 p-6 shadow-xl rounded-md bg-bg1 bg-cover bg-opacity-100 ">
             <form id="LoginForm" onsubmit="return false">
                     <h1 class="text-white font-dancing text-7xl font-bold p-5 flex justify-center">Welcome back</h1>
                         <div class="mb-3"> 
                             <label for="username" class="font-dancing font-bold text-white block 
                                         text-xl mb-2">username</label>
-                            <input type="text" name="username" id="username" class="w-full h-8 rounded-md focus:outline-burntOrange" >
+                            <input type="text" name="username" id="username" class="w-full h-8 rounded-md focus:outline-navyblue" >
                         </div>
                         <div class="mb-3">
                             <label for="password" class=" font-dancing font-bold block text-xl text-white mb-2">password</label>
-                            <input type="password" name="password" id="password" class="w-full  h-8 rounded-md focus:outline-burntOrange">
+                            <input type="password" name="password" id="password" class="w-full  h-8 rounded-md focus:outline-navyblue">
                         </div>
+                        <div class="flex row-span-1 justify-center mb-3">
+                            <p class="text-white">not yet registered?  </p>
+                            <a href="register.html" class="text-blue-900 hover:text-blue-500 duration-300">Register</a>
+                        </div>
+                        
                         <div class="flex justify-center">
-                            <button class="bg-opacity-20 shadow-lg hover:bg-burntOrange duration-300 w-52 p-2 rounded-md text-lg
+                            <button class="bg-opacity-20 shadow-lg hover:bg-navyblue duration-300 w-52 p-2 rounded-md text-lg
                                      text-white text-bold font-dancing" type="button" onclick="validated()">Login</button>
                         </div>
             </form>            
-        </div>
-        <div class="w-1/2 h-48 pl-5 pt-8" >
-            <div class=" flex justify-center">
-                <div class="text-5xl">
-                    <h1 class="text-white font-dancing"> what is <span class="font-bold font-protest text-5xl text-violet-950 ">ezcozy</span>?</h1>
-                </div>   
-             </div>     
-            <div class="p-3 w-11/12  text-left text-white bg-gradient-to-b from-slate-900 via-slate-500 to-slate-400 bg-opacity-100 rounded-md  ">
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non enim metus. Nam sit amet elementum ante,
-            nec viverra est. Aenean nec augue tristique, vestibulum justo eget, luctus urna. In risus augue, vestibulum 
-            nec arcu at, commodo placerat ante. Aenean tempor tincidunt arcu. Sed tortor nisl, facilisis sed eros vitae,
-            luctus cursus elit. Donec vitae luctus enim, non laoreet est. Fusce varius elementum vehicula. Cras ut mauris
-            sed nunc rutrum maximus. Sed laoreet sit amet neque sed fringilla. Fusce egestas elit non lobortis sodales. 
-            Sed tristique lacus sit amet ante porttitor lacinia. Pellentesque sapien ex, fringilla aliquam nisl non, mollis
-            sodales metus. Quisque ipsum urna, laoreet et orci non, cursus iaculis eros. Donec cursus libero ut ante condimentum,
-            id vestibulum enim vehicula.Curabitur ut massa sagittis, vulputate justo a, consectetur justo. Donec et nibh laoreet, 
-            sagittis mauris et, sagittis justo. Proin a purus hendrerit libero suscipit consectetur vel ut lorem. Curabitur convallis
-            ultricies felis, elementum maximus tortor dapibus quis. Integer id condimentum ex.
-            </p>
-            </div>
-            
         </div>
     </div> 
     
